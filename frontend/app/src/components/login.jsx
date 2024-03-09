@@ -17,6 +17,7 @@ const Login = () => {
           <Button colorScheme="blue" variant="solid" width="80%">
             Login
           </Button>
+          
           <Text color="black" textAlign="center">Register</Text>
         </Stack>
       </Stack>

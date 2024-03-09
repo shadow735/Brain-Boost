@@ -1,61 +1,70 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from '../Components/Carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Home = () => {
-    const images = [
-        'https://images.unsplash.com/photo-1709962225055-01ac99b1e231?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8',
-        'https://images.unsplash.com/photo-1709374601273-57d0a44c9437?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1709843109639-7d613de1fbca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8',
-      ];
-  return (
-    <>
-    <div>
-      <Carousel images={images} />
-    </div>
-    <div>
-    <div class="card-container">
-  <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Image" />
-    <div class="content">
-      <h2>Card Heading</h2>
-      <p>Card Subheading</p>
-      <button>Read More</button>
-    </div>
-  </div>
+function Home() {
+    return (
+        <>
+            <Carousel data-bs-theme="dark">
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="slide2.png" // Replace this with the path to your first image
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Image" />
-    <div class="content">
-      <h2>Card Heading</h2>
-      <p>Card Subheading</p>
-      <button>Read More</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Image" />
-    <div class="content">
-      <h2>Card Heading</h2>
-      <p>Card Subheading</p>
-      <button>Read More</button>
-    </div>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Image" />
-    <div class="content">
-      <h2>Card Heading</h2>
-      <p>Card Subheading</p>
-      <button>Read More</button>
-    </div>
-  </div>
-</div>
-
-    
-    </div>
-    </>
-  )
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-md-4">
+                        <Card style={{ width: '100%' }}>
+                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-md-4">
+                        <Card style={{ width: '100%' }}>
+                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-md-4">
+                        <Card style={{ width: '100%' }}>
+                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
 
-export default Home
+export default Home;

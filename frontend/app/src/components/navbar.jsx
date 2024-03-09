@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom'; // Import Link component
 const CustomNavbar = styled(Navbar)`
     background-color: #7D0DC3;
     box-shadow: 0px 8px 12px #e7c6f3;
@@ -51,7 +51,9 @@ function NavBar({ onLoginClick }) {
                             <CustomNavLink href="#Coins">Coins</CustomNavLink>
                         </Nav>
                         <Nav>
-                            <Button variant="outline-light" onClick={onLoginClick}>Sign In</Button>
+                            <Link to="/login">
+                                <Button variant="outline-light">Sign In</Button>
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

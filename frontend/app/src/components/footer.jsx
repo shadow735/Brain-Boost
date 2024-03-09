@@ -16,10 +16,7 @@ const openLocation = () => {
 
 export default function App() {
   return (
-    <div style={{ minHeight: '100vh', position: 'relative' }}>
-      <div style={{ paddingBottom: '6rem' }}> 
-        
-      </div>
+    <div style={{ minHeight: '30vh', position: 'relative', paddingBottom: '6rem' }}>
       <MDBFooter bgColor='#7D0DC3' className='text-center text-lg-left' style={{ position: 'absolute', bottom: 0, width: '100%' }}>
         <div className='container p-4'>
           <div className='row'>
