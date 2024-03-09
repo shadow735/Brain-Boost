@@ -47,8 +47,9 @@ function NavBar({ onLoginClick }) {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <CustomNavLink href="/">Home</CustomNavLink>
+                            <CustomNavLink href="/quiz">Task</CustomNavLink>
                             <CustomNavLink href="#Aboutus">About us</CustomNavLink>
-                            <CustomNavLink href="#Coins">Coins</CustomNavLink>
+                            <CustomNavLink href="/market">Market</CustomNavLink>
                         </Nav>
                         <Nav>
                             <Link to="/login">
